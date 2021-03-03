@@ -6,4 +6,4 @@ Web app  to provide insights about latest movie's and it's Rating
   2) * Overview Available
   3) * Ratings shown in different colours
   4) * Can Search Any Movie
-### Visit Here -: 
+### Visit Here -: https://piyush6702.github.io/MovieTrivia/
