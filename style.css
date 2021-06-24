@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,16 +7,29 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-  background-color: rgb(12, 141, 98);
+    font-family:'Nunito', sans-serif;
+   background-color: rgb(12, 141, 98);
 }
 
 nav {
   background-color: rgb(85, 116, 85);
   padding: 10px;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+
+}
+
+nav a{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(242 182 161);
+    text-shadow: 2px 2px 5px black;
+    font-size: 2rem;
+}
+
+.searchdiv{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 form {
@@ -26,10 +39,16 @@ form {
 }
 
 .query {
-  border: 3px solid darkcyan;
-  border-radius: 15px;
-  padding: 3px 5px;
+  border: 2px solid rgb(198, 255, 231);
+  border-radius: 8px;
+  padding: 6px 10px;
+  width: 250px;
+  margin: 5px auto;
   font-size: 16px;
+}
+
+.query:focus{
+    box-shadow: 0px 0px 8px rgb(218, 218, 218);
 }
 
 #searchform h5{
@@ -143,6 +162,7 @@ footer{
     background-color:rgb(78, 85, 67);
     color: rgb(255, 202, 182);
     display: flex;
+    flex-wrap: wrap;
     padding: 10px;
     justify-content: space-evenly;
     /* align-items: center; */
@@ -160,4 +180,18 @@ footer a{
     cursor: pointer;
     margin: 0px 3px;
     flex-wrap: wrap;
+}
+
+@media screen  and (max-width:425px){
+    .movie{
+        position: relative;
+        width: 300px;
+        background-color: rgb(146, 184, 163);
+        /* border: 2px solid white; */
+        border-radius: 20px;
+        box-shadow: 1px 2px 10px rgb(186, 255, 186);
+        margin: 20px 0px;
+        overflow: hidden;
+    
+    }
 }
